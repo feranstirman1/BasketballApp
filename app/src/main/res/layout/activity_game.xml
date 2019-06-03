@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="25dp"
+    android:padding="5dp"
     tools:context="com.feranstirman.basketballapp.GameActivity">
 
     <TextView
@@ -14,13 +14,21 @@
         android:layout_height="wrap_content"
         android:text="FECHA"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="15sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="25dp">
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/team1Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team 1"
+            android:textAlignment="center"
+            android:textSize="30sp" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -28,7 +36,7 @@
             android:src="@mipmap/ic_launcher_round" />
 
         <TextView
-            android:id="@+id/tv_score_team1"
+            android:id="@+id/tv_scoreteam1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="00"
@@ -51,7 +59,7 @@
         android:padding="25dp">
 
         <TextView
-            android:id="@+id/tv_socre_team2"
+            android:id="@+id/tv_socreteam2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="00"
@@ -62,6 +70,14 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/team2Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team 2"
+            android:textAlignment="center"
+            android:textSize="30sp" />
 
 
     </LinearLayout>

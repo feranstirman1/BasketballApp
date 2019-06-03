@@ -16,6 +16,6 @@ interface GameDao {
     @Query("SELECT * FROM game_table")
     fun getAll(): LiveData<List<Game>>
 
-    @Query("SELECT * FROM game_table WHERE id LIKE :gameID")
+    @Query("SELECT * FROM game_table WHERE id LIKE :gameID LIMIT 1")
     fun getOne(gameID:Int): Game
 }

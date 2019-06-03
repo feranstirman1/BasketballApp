@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.feranstirman.basketballapp.NewGameActivity">
+
+    <data>
+
+        <variable
+            name="team"
+            type="com.feranstirman.basketballapp.ScoreViewModel" />
+    </data>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_team1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="Team 1 Name"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_confirm_team1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OK" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_team2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="Team 2 Name"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_confirm_team2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OK" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <!-- THIS IS A TEAM ELEMENT FOR ADDING POINTS -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_playing_team1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Team 1"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/score_playing_team1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{team.scoreTeam1}"
+                    android:textAlignment="center"
+                    android:textSize="40sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_add1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="+1"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/btn_add2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="+2"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/btn_add3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="+3"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- THIS IS A TEAM ELEMENT FOR ADDING POINTS -->
+
+            <!-- THIS IS A TEAM ELEMENT FOR ADDING POINTS -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_playing_team2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Team2"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/score_playing_team2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{team.scoreTeam2}"
+                    android:textAlignment="center"
+                    android:textSize="40sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_add1_team2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="+1"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/btn_add2_team2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="+2"
+                        android:textSize="25sp" />
+
+                    <Button
+                        android:id="@+id/btn_add3_team2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="+3"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- THIS IS A TEAM ELEMENT FOR ADDING POINTS -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_endGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="END GAME"
+            android:textSize="50sp" />
+    </LinearLayout>
+</layout>
+
