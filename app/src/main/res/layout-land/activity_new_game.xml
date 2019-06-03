@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:hint="Team 1 Name"
-                android:textSize="25sp" />
+                android:textSize="15sp" />
 
             <Button
                 android:backgroundTint="#ffa040"
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:hint="Team 2 Name"
-                android:textSize="25sp" />
+                android:textSize="15sp" />
 
             <Button
                 android:backgroundTint="#ffa040"
@@ -62,7 +62,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp">
+            android:layout_marginTop="15dp">
 
             <!-- THIS IS A TEAM ELEMENT FOR ADDING POINTS -->
             <LinearLayout
@@ -86,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:text="@{team.scoreTeam1}"
                     android:textAlignment="center"
-                    android:textSize="40sp" />
+                    android:textSize="20sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -141,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:text="@{team.scoreTeam2}"
                     android:textAlignment="center"
-                    android:textSize="40sp" />
+                    android:textSize="20sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -181,9 +181,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:text="END GAME"
-            android:textSize="50sp" />
+            android:textSize="20sp" />
     </LinearLayout>
 </layout>
 

@@ -37,9 +37,9 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher_round" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/basketball" />
 
                 <TextView
                     android:id="@+id/tv_score_team1"
@@ -62,12 +62,13 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:text="VS"
+            android:textColor="#c43e00"
             android:textAlignment="center"
             android:textSize="30sp" />
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -81,12 +82,13 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="72dp">
 
                 <TextView
                     android:id="@+id/tv_socre_team2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:text="00"
@@ -94,9 +96,10 @@
                     android:textSize="30sp" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher_round" />
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:src="@drawable/basketball" />
 
             </LinearLayout>
 

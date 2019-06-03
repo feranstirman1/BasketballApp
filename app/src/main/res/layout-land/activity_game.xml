@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.feranstirman.basketballapp.GameActivity">
+
+    <TextView
+        android:id="@+id/tv_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FECHA"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--THIS IS A TEAM ITEM-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/team1Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team 1"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/basketball" />
+
+            <TextView
+                android:id="@+id/tv_scoreteam1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+
+        </LinearLayout>
+        <!--THIS IS A TEAM ITEM-->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="VS"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <!--THIS IS A TEAM ITEM-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+
+            <TextView
+                android:id="@+id/team2Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team 2"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/basketball" />
+
+            <TextView
+                android:id="@+id/tv_socreteam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+
+
+        </LinearLayout>
+        <!--THIS IS A TEAM ITEM-->
+
+    </LinearLayout>
+
+
+</LinearLayout>
