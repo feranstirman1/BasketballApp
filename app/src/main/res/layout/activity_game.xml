@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="FECHA"
         android:textAlignment="center"
-        android:textSize="15sp" />
+        android:textSize="25sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
