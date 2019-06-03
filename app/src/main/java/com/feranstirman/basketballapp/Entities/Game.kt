@@ -11,7 +11,8 @@ data class Game(
         val team2:String,
         val sooreTeam1:Int,
         val scoreTeam2:Int,
-        val date: String
+        val date: String,
+        val winner:String
 ){
     @PrimaryKey(autoGenerate = true)
     var id:Int = 0

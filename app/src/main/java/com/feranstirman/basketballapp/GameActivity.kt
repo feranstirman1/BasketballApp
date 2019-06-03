@@ -23,6 +23,7 @@ class GameActivity : AppCompatActivity() {
         tv_scoreteam1.text = intent.getStringExtra(AppConstants.TEAM1_SCORE)
         tv_socreteam2.text = intent.getStringExtra(AppConstants.TEAM2_SCORE)
         tv_fecha.text = "Fecha: ${intent.getStringExtra(AppConstants.GAME_DATE)}"
+        tv_winner.text = intent.getStringExtra(AppConstants.WINNER)
 
 
     }

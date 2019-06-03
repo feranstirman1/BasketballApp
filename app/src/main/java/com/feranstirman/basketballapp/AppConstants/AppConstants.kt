@@ -9,6 +9,7 @@ public class AppConstants {
         public val TEAM2_SCORE = "TEAM 2 SCORE"
         public val GAME_ID = "GAME ID"
         public val GAME_DATE = "GAME DATE"
+        val WINNER = "WINNER"
     }
 
 

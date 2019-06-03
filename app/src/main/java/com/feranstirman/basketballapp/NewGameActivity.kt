@@ -59,9 +59,17 @@ class NewGameActivity : AppCompatActivity() {
             val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")
             val dateFormatted = date.format(formatter)
 
+            val winner:String
+
             gameViewModel = ViewModelProviders.of(this).get(GameViewModel::class.java)
 
-            val newGame = Game(tv_playing_team1.text.toString(),tv_playing_team2.text.toString(),scoreViewModel.scoreTeam1.toInt(),scoreViewModel.scoreTeam2.toInt(),dateFormatted)
+            if(scoreViewModel.scoreTeam1.toInt()>scoreViewModel.scoreTeam2.toInt()){
+                winner = tv_playing_team1.text.toString()
+            }else{
+                winner = tv_playing_team2.text.toString()
+            }
+
+            val newGame = Game(tv_playing_team1.text.toString(),tv_playing_team2.text.toString(),scoreViewModel.scoreTeam1.toInt(),scoreViewModel.scoreTeam2.toInt(),dateFormatted,winner)
             gameViewModel.insert(newGame)
             finish()
 

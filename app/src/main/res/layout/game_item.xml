@@ -116,6 +116,13 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="fecha"/>
+    <TextView
+        android:id="@+id/winner"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="WINNER"/>
 
 
 </LinearLayout>

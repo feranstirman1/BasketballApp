@@ -33,6 +33,7 @@ class GamesAdapter : RecyclerView.Adapter<CustomViewholder>() {
         holder.itemView.tv_socre_team2.text = game.scoreTeam2.toString()
         holder.itemView.gameDate.text = game.date
         holder.itemView.gameID.text = game.id.toString()
+        holder.itemView.winner.text = "Winner: ${game.winner}"
 
     }
 
@@ -55,6 +56,7 @@ class CustomViewholder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             intent.putExtra(AppConstants.GAME_DATE,itemView.gameDate.text)
             intent.putExtra(AppConstants.TEAM1_NAME,itemView.nomreEquipo1.text)
             intent.putExtra(AppConstants.TEAM2_NAME,itemView.nomreEquipo2.text)
+            intent.putExtra(AppConstants.WINNER,itemView.winner.text)
             itemView.context.startActivity(intent)
         }
     }
